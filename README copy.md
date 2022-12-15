@@ -2,7 +2,7 @@
 
 ```
 module "job_definition" {
-  source = "git::https://github.com/Matheus-SCosta/job_definition.git"
+  source = "git::https://github.com/ps-moip/moip-aws-resources-modules.git//job_definition_batch"
   job_definition = {
     hitch = {
         name_job_definition = lookup(var.name_job_definition_hitch, var.environment)
